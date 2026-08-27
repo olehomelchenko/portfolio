@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.heading %}{{ page.heading }} · {% endif %}{{ site.title }}</title>
+{%- if page.noindex %}
+<meta name="robots" content="noindex">
+{%- endif %}
+<link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+<div class="layout">
+
+<aside class="side">
+  <a class="side-name" href="index.html">{{ site.title }}</a>
+  <p class="side-role">{{ site.role }}</p>
+
+  {%- if site.nav.size > 0 %}
+  <nav class="side-nav">
+    <a href="index.html"{% if page.url == "/index.html" %} class="here"{% endif %}>Роботи</a>
+    {%- for item in site.nav %}
+    <a href="{{ item.file }}"{% if page.url contains item.file %} class="here"{% endif %}>{{ item.name }}</a>
+    {%- endfor %}
+  </nav>
+  {%- endif %}
+
+  {%- if page.charts and site.works.size > 0 %}
+  <nav class="side-works">
+    {%- for work in site.works %}
+    <a href="#work-{{ work.slug }}">{{ work.title }}</a>
+    {%- endfor %}
+  </nav>
+  {%- endif %}
+</aside>
+
+<div class="content">
+
+<header class="page-head">
+  <h1>{{ page.heading }}</h1>
+  {%- if page.show_tagline %}
+  <p class="tagline">{{ site.tagline }}</p>
+  {%- endif %}
+</header>
+
+<main>
+{{ content }}
+</main>
+
+<footer class="page-foot">
+  <p>{{ site.footer }}</p>
+</footer>
+
+</div><!-- .content -->
+</div><!-- .layout -->
+
+<!-- Вбудовує графіки. Бібліотеки Vega-Lite цей файл вантажить сам,
+     і тільки тоді, коли на сторінці є специфікація. -->
+<script src="assets/embed.js"></script>
+</body>
+</html>
