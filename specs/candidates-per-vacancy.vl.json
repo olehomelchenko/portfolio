@@ -1,0 +1,2324 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Candidates per vacancy (weekly ratio line) over dimmed monthly magnitude bars. Bars use a hidden 0-265k count scale (two-width overlap, bullet style); the ratio axis is the only visible axis. Data comes from the named source 'labor_market_weekly' (fields: week, candidates, vacancies) - rebind it at runtime or serve labor-market-weekly.json next to this file.",
+  "width": "container",
+  "height": 430,
+  "background": "#fcfcfb",
+  "padding": {
+    "left": 5,
+    "top": 5,
+    "right": 46,
+    "bottom": 5
+  },
+  "config": {
+    "font": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+    "axis": {
+      "labelColor": "#898781",
+      "titleColor": "#52514e",
+      "gridColor": "#e1e0d9",
+      "gridWidth": 1,
+      "domainColor": "#c3c2b7",
+      "tickColor": "#c3c2b7",
+      "labelFontSize": 11,
+      "titleFontSize": 11.5,
+      "titleFontWeight": 500,
+      "titlePadding": 8
+    },
+    "legend": {
+      "labelColor": "#52514e",
+      "labelFontSize": 12,
+      "titleColor": "#52514e"
+    },
+    "line": {
+      "strokeWidth": 2,
+      "strokeCap": "round",
+      "strokeJoin": "round"
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "data": {
+    "name": "labor_market_weekly",
+    "values": [
+      {
+        "week": "2020-03-23",
+        "candidates": 18321,
+        "vacancies": 4927
+      },
+      {
+        "week": "2020-03-30",
+        "candidates": 18936,
+        "vacancies": 4216
+      },
+      {
+        "week": "2020-04-06",
+        "candidates": 18705,
+        "vacancies": 4570
+      },
+      {
+        "week": "2020-04-13",
+        "candidates": 19150,
+        "vacancies": 4920
+      },
+      {
+        "week": "2020-04-20",
+        "candidates": 19574,
+        "vacancies": 5125
+      },
+      {
+        "week": "2020-04-27",
+        "candidates": 19880,
+        "vacancies": 5183
+      },
+      {
+        "week": "2020-05-04",
+        "candidates": 20230,
+        "vacancies": 5286
+      },
+      {
+        "week": "2020-05-11",
+        "candidates": 20462,
+        "vacancies": 5115
+      },
+      {
+        "week": "2020-05-18",
+        "candidates": 20822,
+        "vacancies": 5432
+      },
+      {
+        "week": "2020-05-25",
+        "candidates": 21131,
+        "vacancies": 5615
+      },
+      {
+        "week": "2020-06-01",
+        "candidates": 21269,
+        "vacancies": 5823
+      },
+      {
+        "week": "2020-06-08",
+        "candidates": 21384,
+        "vacancies": 6084
+      },
+      {
+        "week": "2020-06-15",
+        "candidates": 20960,
+        "vacancies": 6318
+      },
+      {
+        "week": "2020-06-22",
+        "candidates": 21284,
+        "vacancies": 6454
+      },
+      {
+        "week": "2020-06-29",
+        "candidates": 21442,
+        "vacancies": 6540
+      },
+      {
+        "week": "2020-07-06",
+        "candidates": 21745,
+        "vacancies": 7019
+      },
+      {
+        "week": "2020-07-13",
+        "candidates": 21591,
+        "vacancies": 7046
+      },
+      {
+        "week": "2020-07-20",
+        "candidates": 21547,
+        "vacancies": 7284
+      },
+      {
+        "week": "2020-07-27",
+        "candidates": 21411,
+        "vacancies": 7514
+      },
+      {
+        "week": "2020-08-03",
+        "candidates": 21334,
+        "vacancies": 7458
+      },
+      {
+        "week": "2020-08-10",
+        "candidates": 21163,
+        "vacancies": 7676
+      },
+      {
+        "week": "2020-08-17",
+        "candidates": 20927,
+        "vacancies": 7879
+      },
+      {
+        "week": "2020-08-24",
+        "candidates": 20969,
+        "vacancies": 8012
+      },
+      {
+        "week": "2020-08-31",
+        "candidates": 20287,
+        "vacancies": 8569
+      },
+      {
+        "week": "2020-09-07",
+        "candidates": 20154,
+        "vacancies": 9989
+      },
+      {
+        "week": "2020-09-14",
+        "candidates": 20204,
+        "vacancies": 9543
+      },
+      {
+        "week": "2020-09-21",
+        "candidates": 20075,
+        "vacancies": 10058
+      },
+      {
+        "week": "2020-09-28",
+        "candidates": 20124,
+        "vacancies": 10135
+      },
+      {
+        "week": "2020-10-05",
+        "candidates": 19927,
+        "vacancies": 10778
+      },
+      {
+        "week": "2020-10-12",
+        "candidates": 19549,
+        "vacancies": 10726
+      },
+      {
+        "week": "2020-10-19",
+        "candidates": 19296,
+        "vacancies": 11426
+      },
+      {
+        "week": "2020-10-26",
+        "candidates": 19142,
+        "vacancies": 12008
+      },
+      {
+        "week": "2020-11-02",
+        "candidates": 18905,
+        "vacancies": 12300
+      },
+      {
+        "week": "2020-11-09",
+        "candidates": 18518,
+        "vacancies": 13124
+      },
+      {
+        "week": "2020-11-16",
+        "candidates": 18248,
+        "vacancies": 13225
+      },
+      {
+        "week": "2020-11-23",
+        "candidates": 18170,
+        "vacancies": 13413
+      },
+      {
+        "week": "2020-11-30",
+        "candidates": 17800,
+        "vacancies": 14061
+      },
+      {
+        "week": "2020-12-07",
+        "candidates": 17393,
+        "vacancies": 13939
+      },
+      {
+        "week": "2020-12-14",
+        "candidates": 16901,
+        "vacancies": 14221
+      },
+      {
+        "week": "2020-12-21",
+        "candidates": 16375,
+        "vacancies": 13573
+      },
+      {
+        "week": "2020-12-28",
+        "candidates": 15702,
+        "vacancies": 12037
+      },
+      {
+        "week": "2021-01-04",
+        "candidates": 16357,
+        "vacancies": 11888
+      },
+      {
+        "week": "2021-01-11",
+        "candidates": 16971,
+        "vacancies": 14127
+      },
+      {
+        "week": "2021-01-18",
+        "candidates": 16944,
+        "vacancies": 15651
+      },
+      {
+        "week": "2021-01-25",
+        "candidates": 16905,
+        "vacancies": 17219
+      },
+      {
+        "week": "2021-02-01",
+        "candidates": 17022,
+        "vacancies": 18082
+      },
+      {
+        "week": "2021-02-08",
+        "candidates": 16804,
+        "vacancies": 17414
+      },
+      {
+        "week": "2021-02-15",
+        "candidates": 16699,
+        "vacancies": 17930
+      },
+      {
+        "week": "2021-02-22",
+        "candidates": 16673,
+        "vacancies": 18450
+      },
+      {
+        "week": "2021-03-01",
+        "candidates": 16775,
+        "vacancies": 18923
+      },
+      {
+        "week": "2021-03-08",
+        "candidates": 16825,
+        "vacancies": 18875
+      },
+      {
+        "week": "2021-03-15",
+        "candidates": 16885,
+        "vacancies": 19080
+      },
+      {
+        "week": "2021-03-22",
+        "candidates": 16567,
+        "vacancies": 19506
+      },
+      {
+        "week": "2021-03-29",
+        "candidates": 16223,
+        "vacancies": 19997
+      },
+      {
+        "week": "2021-04-05",
+        "candidates": 16246,
+        "vacancies": 20362
+      },
+      {
+        "week": "2021-04-12",
+        "candidates": 16122,
+        "vacancies": 20432
+      },
+      {
+        "week": "2021-04-19",
+        "candidates": 15942,
+        "vacancies": 20416
+      },
+      {
+        "week": "2021-04-26",
+        "candidates": 15497,
+        "vacancies": 20627
+      },
+      {
+        "week": "2021-05-03",
+        "candidates": 14889,
+        "vacancies": 19656
+      },
+      {
+        "week": "2021-05-10",
+        "candidates": 15151,
+        "vacancies": 20128
+      },
+      {
+        "week": "2021-05-17",
+        "candidates": 16148,
+        "vacancies": 21201
+      },
+      {
+        "week": "2021-05-24",
+        "candidates": 16193,
+        "vacancies": 21607
+      },
+      {
+        "week": "2021-05-31",
+        "candidates": 16156,
+        "vacancies": 22631
+      },
+      {
+        "week": "2021-06-07",
+        "candidates": 15451,
+        "vacancies": 22309
+      },
+      {
+        "week": "2021-06-14",
+        "candidates": 15428,
+        "vacancies": 22282
+      },
+      {
+        "week": "2021-06-21",
+        "candidates": 15412,
+        "vacancies": 21494
+      },
+      {
+        "week": "2021-06-28",
+        "candidates": 15695,
+        "vacancies": 21985
+      },
+      {
+        "week": "2021-07-05",
+        "candidates": 16249,
+        "vacancies": 22585
+      },
+      {
+        "week": "2021-07-12",
+        "candidates": 16194,
+        "vacancies": 22658
+      },
+      {
+        "week": "2021-07-19",
+        "candidates": 16308,
+        "vacancies": 23064
+      },
+      {
+        "week": "2021-07-26",
+        "candidates": 16498,
+        "vacancies": 23514
+      },
+      {
+        "week": "2021-08-02",
+        "candidates": 16624,
+        "vacancies": 23782
+      },
+      {
+        "week": "2021-08-09",
+        "candidates": 16849,
+        "vacancies": 23946
+      },
+      {
+        "week": "2021-08-16",
+        "candidates": 17889,
+        "vacancies": 24445
+      },
+      {
+        "week": "2021-08-23",
+        "candidates": 20236,
+        "vacancies": 24039
+      },
+      {
+        "week": "2021-08-30",
+        "candidates": 21681,
+        "vacancies": 24118
+      },
+      {
+        "week": "2021-09-06",
+        "candidates": 23552,
+        "vacancies": 24361
+      },
+      {
+        "week": "2021-09-13",
+        "candidates": 24580,
+        "vacancies": 24421
+      },
+      {
+        "week": "2021-09-20",
+        "candidates": 25674,
+        "vacancies": 25083
+      },
+      {
+        "week": "2021-09-27",
+        "candidates": 26343,
+        "vacancies": 25163
+      },
+      {
+        "week": "2021-10-04",
+        "candidates": 27086,
+        "vacancies": 25324
+      },
+      {
+        "week": "2021-10-11",
+        "candidates": 27343,
+        "vacancies": 24537
+      },
+      {
+        "week": "2021-10-18",
+        "candidates": 28320,
+        "vacancies": 25634
+      },
+      {
+        "week": "2021-10-25",
+        "candidates": 28628,
+        "vacancies": 25825
+      },
+      {
+        "week": "2021-11-01",
+        "candidates": 29271,
+        "vacancies": 26318
+      },
+      {
+        "week": "2021-11-08",
+        "candidates": 29852,
+        "vacancies": 27431
+      },
+      {
+        "week": "2021-11-15",
+        "candidates": 30343,
+        "vacancies": 26802
+      },
+      {
+        "week": "2021-11-22",
+        "candidates": 30461,
+        "vacancies": 26745
+      },
+      {
+        "week": "2021-11-29",
+        "candidates": 30839,
+        "vacancies": 26571
+      },
+      {
+        "week": "2021-12-06",
+        "candidates": 31216,
+        "vacancies": 26701
+      },
+      {
+        "week": "2021-12-13",
+        "candidates": 31331,
+        "vacancies": 26377
+      },
+      {
+        "week": "2021-12-20",
+        "candidates": 31279,
+        "vacancies": 25244
+      },
+      {
+        "week": "2021-12-27",
+        "candidates": 30962,
+        "vacancies": 22121
+      },
+      {
+        "week": "2022-01-03",
+        "candidates": 31931,
+        "vacancies": 20319
+      },
+      {
+        "week": "2022-01-10",
+        "candidates": 33143,
+        "vacancies": 23622
+      },
+      {
+        "week": "2022-01-17",
+        "candidates": 34226,
+        "vacancies": 25758
+      },
+      {
+        "week": "2022-01-24",
+        "candidates": 35036,
+        "vacancies": 28009
+      },
+      {
+        "week": "2022-01-31",
+        "candidates": 35917,
+        "vacancies": 28965
+      },
+      {
+        "week": "2022-02-07",
+        "candidates": 36750,
+        "vacancies": 27448
+      },
+      {
+        "week": "2022-02-14",
+        "candidates": 36984,
+        "vacancies": 27009
+      },
+      {
+        "week": "2022-02-21",
+        "candidates": 36567,
+        "vacancies": 24824
+      },
+      {
+        "week": "2022-02-28",
+        "candidates": 33898,
+        "vacancies": 19653
+      },
+      {
+        "week": "2022-03-07",
+        "candidates": 36069,
+        "vacancies": 15596
+      },
+      {
+        "week": "2022-03-14",
+        "candidates": 37879,
+        "vacancies": 10408
+      },
+      {
+        "week": "2022-03-21",
+        "candidates": 39458,
+        "vacancies": 13950
+      },
+      {
+        "week": "2022-03-28",
+        "candidates": 40871,
+        "vacancies": 15442
+      },
+      {
+        "week": "2022-04-04",
+        "candidates": 42007,
+        "vacancies": 15910
+      },
+      {
+        "week": "2022-04-11",
+        "candidates": 42881,
+        "vacancies": 14670
+      },
+      {
+        "week": "2022-04-18",
+        "candidates": 43676,
+        "vacancies": 14934
+      },
+      {
+        "week": "2022-04-25",
+        "candidates": 44448,
+        "vacancies": 15054
+      },
+      {
+        "week": "2022-05-02",
+        "candidates": 45370,
+        "vacancies": 15411
+      },
+      {
+        "week": "2022-05-09",
+        "candidates": 46237,
+        "vacancies": 15574
+      },
+      {
+        "week": "2022-05-16",
+        "candidates": 47388,
+        "vacancies": 15289
+      },
+      {
+        "week": "2022-05-23",
+        "candidates": 47848,
+        "vacancies": 15319
+      },
+      {
+        "week": "2022-05-30",
+        "candidates": 49400,
+        "vacancies": 15342
+      },
+      {
+        "week": "2022-06-06",
+        "candidates": 50276,
+        "vacancies": 15160
+      },
+      {
+        "week": "2022-06-13",
+        "candidates": 51203,
+        "vacancies": 14726
+      },
+      {
+        "week": "2022-06-20",
+        "candidates": 52334,
+        "vacancies": 14720
+      },
+      {
+        "week": "2022-06-27",
+        "candidates": 53209,
+        "vacancies": 14336
+      },
+      {
+        "week": "2022-07-04",
+        "candidates": 54315,
+        "vacancies": 14137
+      },
+      {
+        "week": "2022-07-11",
+        "candidates": 55196,
+        "vacancies": 13739
+      },
+      {
+        "week": "2022-07-18",
+        "candidates": 56175,
+        "vacancies": 13557
+      },
+      {
+        "week": "2022-07-25",
+        "candidates": 57136,
+        "vacancies": 13490
+      },
+      {
+        "week": "2022-08-01",
+        "candidates": 58140,
+        "vacancies": 13490
+      },
+      {
+        "week": "2022-08-08",
+        "candidates": 59030,
+        "vacancies": 13197
+      },
+      {
+        "week": "2022-08-15",
+        "candidates": 59802,
+        "vacancies": 13159
+      },
+      {
+        "week": "2022-08-22",
+        "candidates": 60408,
+        "vacancies": 12709
+      },
+      {
+        "week": "2022-08-29",
+        "candidates": 61258,
+        "vacancies": 12561
+      },
+      {
+        "week": "2022-09-05",
+        "candidates": 62400,
+        "vacancies": 12901
+      },
+      {
+        "week": "2022-09-12",
+        "candidates": 63054,
+        "vacancies": 13097
+      },
+      {
+        "week": "2022-09-19",
+        "candidates": 63660,
+        "vacancies": 13572
+      },
+      {
+        "week": "2022-09-26",
+        "candidates": 64382,
+        "vacancies": 13360
+      },
+      {
+        "week": "2022-10-03",
+        "candidates": 65206,
+        "vacancies": 13355
+      },
+      {
+        "week": "2022-10-10",
+        "candidates": 65633,
+        "vacancies": 13007
+      },
+      {
+        "week": "2022-10-17",
+        "candidates": 66511,
+        "vacancies": 12987
+      },
+      {
+        "week": "2022-10-24",
+        "candidates": 67194,
+        "vacancies": 12881
+      },
+      {
+        "week": "2022-10-31",
+        "candidates": 69151,
+        "vacancies": 12483
+      },
+      {
+        "week": "2022-11-07",
+        "candidates": 70213,
+        "vacancies": 12377
+      },
+      {
+        "week": "2022-11-14",
+        "candidates": 70973,
+        "vacancies": 11845
+      },
+      {
+        "week": "2022-11-21",
+        "candidates": 71476,
+        "vacancies": 11507
+      },
+      {
+        "week": "2022-11-28",
+        "candidates": 72578,
+        "vacancies": 11097
+      },
+      {
+        "week": "2022-12-05",
+        "candidates": 73921,
+        "vacancies": 10632
+      },
+      {
+        "week": "2022-12-12",
+        "candidates": 75211,
+        "vacancies": 10091
+      },
+      {
+        "week": "2022-12-19",
+        "candidates": 76011,
+        "vacancies": 9682
+      },
+      {
+        "week": "2022-12-26",
+        "candidates": 76488,
+        "vacancies": 8727
+      },
+      {
+        "week": "2023-01-02",
+        "candidates": 78485,
+        "vacancies": 8300
+      },
+      {
+        "week": "2023-01-09",
+        "candidates": 80623,
+        "vacancies": 8791
+      },
+      {
+        "week": "2023-01-16",
+        "candidates": 82525,
+        "vacancies": 9300
+      },
+      {
+        "week": "2023-01-23",
+        "candidates": 84187,
+        "vacancies": 9874
+      },
+      {
+        "week": "2023-01-30",
+        "candidates": 71123,
+        "vacancies": 9905
+      },
+      {
+        "week": "2023-02-06",
+        "candidates": 72302,
+        "vacancies": 9623
+      },
+      {
+        "week": "2023-02-13",
+        "candidates": 74007,
+        "vacancies": 9644
+      },
+      {
+        "week": "2023-02-20",
+        "candidates": 75377,
+        "vacancies": 9575
+      },
+      {
+        "week": "2023-02-27",
+        "candidates": 76634,
+        "vacancies": 9536
+      },
+      {
+        "week": "2023-03-06",
+        "candidates": 77995,
+        "vacancies": 9489
+      },
+      {
+        "week": "2023-03-13",
+        "candidates": 79206,
+        "vacancies": 9466
+      },
+      {
+        "week": "2023-03-20",
+        "candidates": 80236,
+        "vacancies": 9478
+      },
+      {
+        "week": "2023-03-27",
+        "candidates": 81489,
+        "vacancies": 9483
+      },
+      {
+        "week": "2023-04-03",
+        "candidates": 82405,
+        "vacancies": 9573
+      },
+      {
+        "week": "2023-04-10",
+        "candidates": 82725,
+        "vacancies": 9327
+      },
+      {
+        "week": "2023-04-17",
+        "candidates": 83114,
+        "vacancies": 9285
+      },
+      {
+        "week": "2023-04-24",
+        "candidates": 83908,
+        "vacancies": 9335
+      },
+      {
+        "week": "2023-05-01",
+        "candidates": 84029,
+        "vacancies": 9469
+      },
+      {
+        "week": "2023-05-08",
+        "candidates": 84773,
+        "vacancies": 9438
+      },
+      {
+        "week": "2023-05-15",
+        "candidates": 84886,
+        "vacancies": 9682
+      },
+      {
+        "week": "2023-05-22",
+        "candidates": 85350,
+        "vacancies": 9500
+      },
+      {
+        "week": "2023-05-29",
+        "candidates": 85642,
+        "vacancies": 9523
+      },
+      {
+        "week": "2023-06-05",
+        "candidates": 86030,
+        "vacancies": 9236
+      },
+      {
+        "week": "2023-06-12",
+        "candidates": 86598,
+        "vacancies": 9343
+      },
+      {
+        "week": "2023-06-19",
+        "candidates": 87038,
+        "vacancies": 9364
+      },
+      {
+        "week": "2023-06-26",
+        "candidates": 87600,
+        "vacancies": 9236
+      },
+      {
+        "week": "2023-07-03",
+        "candidates": 88361,
+        "vacancies": 9471
+      },
+      {
+        "week": "2023-07-10",
+        "candidates": 89268,
+        "vacancies": 9283
+      },
+      {
+        "week": "2023-07-17",
+        "candidates": 89760,
+        "vacancies": 9223
+      },
+      {
+        "week": "2023-07-24",
+        "candidates": 89946,
+        "vacancies": 9219
+      },
+      {
+        "week": "2023-07-31",
+        "candidates": 90477,
+        "vacancies": 8117
+      },
+      {
+        "week": "2023-08-07",
+        "candidates": 91008,
+        "vacancies": 7600
+      },
+      {
+        "week": "2023-08-14",
+        "candidates": 91338,
+        "vacancies": 7092
+      },
+      {
+        "week": "2023-08-21",
+        "candidates": 91164,
+        "vacancies": 6653
+      },
+      {
+        "week": "2023-08-28",
+        "candidates": 91360,
+        "vacancies": 6774
+      },
+      {
+        "week": "2023-09-04",
+        "candidates": 91495,
+        "vacancies": 6879
+      },
+      {
+        "week": "2023-09-11",
+        "candidates": 91959,
+        "vacancies": 6761
+      },
+      {
+        "week": "2023-09-18",
+        "candidates": 92184,
+        "vacancies": 7075
+      },
+      {
+        "week": "2023-09-25",
+        "candidates": 92326,
+        "vacancies": 6952
+      },
+      {
+        "week": "2023-10-02",
+        "candidates": 91820,
+        "vacancies": 7008
+      },
+      {
+        "week": "2023-10-09",
+        "candidates": 91720,
+        "vacancies": 7052
+      },
+      {
+        "week": "2023-10-16",
+        "candidates": 91718,
+        "vacancies": 7061
+      },
+      {
+        "week": "2023-10-23",
+        "candidates": 92155,
+        "vacancies": 6999
+      },
+      {
+        "week": "2023-10-30",
+        "candidates": 92129,
+        "vacancies": 6888
+      },
+      {
+        "week": "2023-11-06",
+        "candidates": 92547,
+        "vacancies": 6852
+      },
+      {
+        "week": "2023-11-13",
+        "candidates": 92533,
+        "vacancies": 6941
+      },
+      {
+        "week": "2023-11-20",
+        "candidates": 92696,
+        "vacancies": 6935
+      },
+      {
+        "week": "2023-11-27",
+        "candidates": 92698,
+        "vacancies": 6915
+      },
+      {
+        "week": "2023-12-04",
+        "candidates": 92422,
+        "vacancies": 6795
+      },
+      {
+        "week": "2023-12-11",
+        "candidates": 91568,
+        "vacancies": 6685
+      },
+      {
+        "week": "2023-12-18",
+        "candidates": 90801,
+        "vacancies": 6367
+      },
+      {
+        "week": "2023-12-25",
+        "candidates": 89337,
+        "vacancies": 5701
+      },
+      {
+        "week": "2024-01-01",
+        "candidates": 89594,
+        "vacancies": 5716
+      },
+      {
+        "week": "2024-01-08",
+        "candidates": 90414,
+        "vacancies": 6142
+      },
+      {
+        "week": "2024-01-15",
+        "candidates": 90746,
+        "vacancies": 6577
+      },
+      {
+        "week": "2024-01-22",
+        "candidates": 90327,
+        "vacancies": 6939
+      },
+      {
+        "week": "2024-01-29",
+        "candidates": 90200,
+        "vacancies": 6983
+      },
+      {
+        "week": "2024-02-05",
+        "candidates": 90189,
+        "vacancies": 6852
+      },
+      {
+        "week": "2024-02-12",
+        "candidates": 89834,
+        "vacancies": 6900
+      },
+      {
+        "week": "2024-02-19",
+        "candidates": 89650,
+        "vacancies": 7200
+      },
+      {
+        "week": "2024-02-26",
+        "candidates": 89809,
+        "vacancies": 7512
+      },
+      {
+        "week": "2024-03-04",
+        "candidates": 89681,
+        "vacancies": 7523
+      },
+      {
+        "week": "2024-03-11",
+        "candidates": 90170,
+        "vacancies": 6752
+      },
+      {
+        "week": "2024-03-18",
+        "candidates": 90291,
+        "vacancies": 7074
+      },
+      {
+        "week": "2024-03-25",
+        "candidates": 90293,
+        "vacancies": 7305
+      },
+      {
+        "week": "2024-04-01",
+        "candidates": 90411,
+        "vacancies": 7424
+      },
+      {
+        "week": "2024-04-08",
+        "candidates": 90017,
+        "vacancies": 7468
+      },
+      {
+        "week": "2024-04-15",
+        "candidates": 89761,
+        "vacancies": 7461
+      },
+      {
+        "week": "2024-04-22",
+        "candidates": 89117,
+        "vacancies": 7214
+      },
+      {
+        "week": "2024-04-29",
+        "candidates": 88531,
+        "vacancies": 7288
+      },
+      {
+        "week": "2024-05-06",
+        "candidates": 88303,
+        "vacancies": 7187
+      },
+      {
+        "week": "2024-05-13",
+        "candidates": 87963,
+        "vacancies": 7054
+      },
+      {
+        "week": "2024-05-20",
+        "candidates": 87541,
+        "vacancies": 7189
+      },
+      {
+        "week": "2024-05-27",
+        "candidates": 87180,
+        "vacancies": 7211
+      },
+      {
+        "week": "2024-06-03",
+        "candidates": 86782,
+        "vacancies": 7277
+      },
+      {
+        "week": "2024-06-10",
+        "candidates": 86785,
+        "vacancies": 7232
+      },
+      {
+        "week": "2024-06-17",
+        "candidates": 86265,
+        "vacancies": 7159
+      },
+      {
+        "week": "2024-06-24",
+        "candidates": 86183,
+        "vacancies": 6958
+      },
+      {
+        "week": "2024-07-01",
+        "candidates": 86120,
+        "vacancies": 7280
+      },
+      {
+        "week": "2024-07-08",
+        "candidates": 86067,
+        "vacancies": 7269
+      },
+      {
+        "week": "2024-07-15",
+        "candidates": 85534,
+        "vacancies": 7279
+      },
+      {
+        "week": "2024-07-22",
+        "candidates": 85656,
+        "vacancies": 7352
+      },
+      {
+        "week": "2024-07-29",
+        "candidates": 85788,
+        "vacancies": 7396
+      },
+      {
+        "week": "2024-08-05",
+        "candidates": 85888,
+        "vacancies": 7507
+      },
+      {
+        "week": "2024-08-12",
+        "candidates": 85544,
+        "vacancies": 7549
+      },
+      {
+        "week": "2024-08-19",
+        "candidates": 85074,
+        "vacancies": 7357
+      },
+      {
+        "week": "2024-08-26",
+        "candidates": 84826,
+        "vacancies": 7030
+      },
+      {
+        "week": "2024-09-02",
+        "candidates": 85171,
+        "vacancies": 7208
+      },
+      {
+        "week": "2024-09-09",
+        "candidates": 85444,
+        "vacancies": 7447
+      },
+      {
+        "week": "2024-09-16",
+        "candidates": 85150,
+        "vacancies": 7401
+      },
+      {
+        "week": "2024-09-23",
+        "candidates": 85166,
+        "vacancies": 7427
+      },
+      {
+        "week": "2024-09-30",
+        "candidates": 84683,
+        "vacancies": 7226
+      },
+      {
+        "week": "2024-10-07",
+        "candidates": 84641,
+        "vacancies": 7348
+      },
+      {
+        "week": "2024-10-14",
+        "candidates": 84640,
+        "vacancies": 7494
+      },
+      {
+        "week": "2024-10-21",
+        "candidates": 83925,
+        "vacancies": 7406
+      },
+      {
+        "week": "2024-10-28",
+        "candidates": 83615,
+        "vacancies": 7367
+      },
+      {
+        "week": "2024-11-04",
+        "candidates": 83532,
+        "vacancies": 7365
+      },
+      {
+        "week": "2024-11-11",
+        "candidates": 83010,
+        "vacancies": 7425
+      },
+      {
+        "week": "2024-11-18",
+        "candidates": 82605,
+        "vacancies": 7574
+      },
+      {
+        "week": "2024-11-25",
+        "candidates": 82003,
+        "vacancies": 7586
+      },
+      {
+        "week": "2024-12-02",
+        "candidates": 81870,
+        "vacancies": 7382
+      },
+      {
+        "week": "2024-12-09",
+        "candidates": 81385,
+        "vacancies": 7426
+      },
+      {
+        "week": "2024-12-16",
+        "candidates": 80443,
+        "vacancies": 7142
+      },
+      {
+        "week": "2024-12-23",
+        "candidates": 78891,
+        "vacancies": 6456
+      },
+      {
+        "week": "2024-12-30",
+        "candidates": 78567,
+        "vacancies": 5942
+      },
+      {
+        "week": "2025-01-06",
+        "candidates": 80219,
+        "vacancies": 6350
+      },
+      {
+        "week": "2025-01-13",
+        "candidates": 80558,
+        "vacancies": 6794
+      },
+      {
+        "week": "2025-01-20",
+        "candidates": 80995,
+        "vacancies": 7339
+      },
+      {
+        "week": "2025-01-27",
+        "candidates": 81569,
+        "vacancies": 7983
+      },
+      {
+        "week": "2025-02-03",
+        "candidates": 82141,
+        "vacancies": 7676
+      },
+      {
+        "week": "2025-02-10",
+        "candidates": 82541,
+        "vacancies": 7917
+      },
+      {
+        "week": "2025-02-17",
+        "candidates": 82792,
+        "vacancies": 7964
+      },
+      {
+        "week": "2025-02-24",
+        "candidates": 82603,
+        "vacancies": 8232
+      },
+      {
+        "week": "2025-03-03",
+        "candidates": 82417,
+        "vacancies": 8008
+      },
+      {
+        "week": "2025-03-10",
+        "candidates": 82824,
+        "vacancies": 7959
+      },
+      {
+        "week": "2025-03-17",
+        "candidates": 82681,
+        "vacancies": 7957
+      },
+      {
+        "week": "2025-03-24",
+        "candidates": 83243,
+        "vacancies": 8007
+      },
+      {
+        "week": "2025-03-31",
+        "candidates": 83774,
+        "vacancies": 8065
+      },
+      {
+        "week": "2025-04-07",
+        "candidates": 84178,
+        "vacancies": 8059
+      },
+      {
+        "week": "2025-04-14",
+        "candidates": 83783,
+        "vacancies": 7970
+      },
+      {
+        "week": "2025-04-21",
+        "candidates": 83588,
+        "vacancies": 7984
+      },
+      {
+        "week": "2025-04-28",
+        "candidates": 83286,
+        "vacancies": 7926
+      },
+      {
+        "week": "2025-05-05",
+        "candidates": 83755,
+        "vacancies": 7978
+      },
+      {
+        "week": "2025-05-12",
+        "candidates": 83849,
+        "vacancies": 8028
+      },
+      {
+        "week": "2025-05-19",
+        "candidates": 83707,
+        "vacancies": 8265
+      },
+      {
+        "week": "2025-05-26",
+        "candidates": 83643,
+        "vacancies": 8389
+      },
+      {
+        "week": "2025-06-02",
+        "candidates": 83385,
+        "vacancies": 8387
+      },
+      {
+        "week": "2025-06-09",
+        "candidates": 83215,
+        "vacancies": 8357
+      },
+      {
+        "week": "2025-06-16",
+        "candidates": 83214,
+        "vacancies": 8319
+      },
+      {
+        "week": "2025-06-23",
+        "candidates": 83042,
+        "vacancies": 8135
+      },
+      {
+        "week": "2025-06-30",
+        "candidates": 83784,
+        "vacancies": 8211
+      },
+      {
+        "week": "2025-07-07",
+        "candidates": 83907,
+        "vacancies": 8471
+      },
+      {
+        "week": "2025-07-14",
+        "candidates": 83825,
+        "vacancies": 8653
+      },
+      {
+        "week": "2025-07-21",
+        "candidates": 83530,
+        "vacancies": 8826
+      },
+      {
+        "week": "2025-07-28",
+        "candidates": 83797,
+        "vacancies": 8773
+      },
+      {
+        "week": "2025-08-04",
+        "candidates": 83770,
+        "vacancies": 8816
+      },
+      {
+        "week": "2025-08-11",
+        "candidates": 83567,
+        "vacancies": 8877
+      },
+      {
+        "week": "2025-08-18",
+        "candidates": 83423,
+        "vacancies": 9092
+      },
+      {
+        "week": "2025-08-25",
+        "candidates": 83605,
+        "vacancies": 8978
+      },
+      {
+        "week": "2025-09-01",
+        "candidates": 84643,
+        "vacancies": 9020
+      },
+      {
+        "week": "2025-09-08",
+        "candidates": 84728,
+        "vacancies": 9021
+      },
+      {
+        "week": "2025-09-15",
+        "candidates": 84619,
+        "vacancies": 9193
+      },
+      {
+        "week": "2025-09-22",
+        "candidates": 84709,
+        "vacancies": 9362
+      },
+      {
+        "week": "2025-09-29",
+        "candidates": 84630,
+        "vacancies": 9312
+      },
+      {
+        "week": "2025-10-06",
+        "candidates": 84628,
+        "vacancies": 9444
+      },
+      {
+        "week": "2025-10-13",
+        "candidates": 84270,
+        "vacancies": 9508
+      },
+      {
+        "week": "2025-10-20",
+        "candidates": 84020,
+        "vacancies": 9462
+      },
+      {
+        "week": "2025-10-27",
+        "candidates": 83650,
+        "vacancies": 9505
+      },
+      {
+        "week": "2025-11-03",
+        "candidates": 83579,
+        "vacancies": 9602
+      },
+      {
+        "week": "2025-11-10",
+        "candidates": 83087,
+        "vacancies": 9648
+      },
+      {
+        "week": "2025-11-17",
+        "candidates": 82749,
+        "vacancies": 9624
+      },
+      {
+        "week": "2025-11-24",
+        "candidates": 82221,
+        "vacancies": 9636
+      },
+      {
+        "week": "2025-12-01",
+        "candidates": 82066,
+        "vacancies": 9421
+      },
+      {
+        "week": "2025-12-08",
+        "candidates": 81693,
+        "vacancies": 9420
+      },
+      {
+        "week": "2025-12-15",
+        "candidates": 81040,
+        "vacancies": 9106
+      },
+      {
+        "week": "2025-12-22",
+        "candidates": 79990,
+        "vacancies": 8285
+      },
+      {
+        "week": "2025-12-29",
+        "candidates": 79528,
+        "vacancies": 7440
+      },
+      {
+        "week": "2026-01-05",
+        "candidates": 81278,
+        "vacancies": 8218
+      },
+      {
+        "week": "2026-01-12",
+        "candidates": 81498,
+        "vacancies": 8557
+      },
+      {
+        "week": "2026-01-19",
+        "candidates": 82168,
+        "vacancies": 9304
+      },
+      {
+        "week": "2026-01-26",
+        "candidates": 82439,
+        "vacancies": 10010
+      },
+      {
+        "week": "2026-02-02",
+        "candidates": 83010,
+        "vacancies": 9587
+      },
+      {
+        "week": "2026-02-09",
+        "candidates": 83210,
+        "vacancies": 9604
+      },
+      {
+        "week": "2026-02-16",
+        "candidates": 83714,
+        "vacancies": 9601
+      },
+      {
+        "week": "2026-02-23",
+        "candidates": 83700,
+        "vacancies": 9548
+      },
+      {
+        "week": "2026-03-02",
+        "candidates": 83984,
+        "vacancies": 9474
+      },
+      {
+        "week": "2026-03-09",
+        "candidates": 84308,
+        "vacancies": 9355
+      },
+      {
+        "week": "2026-03-16",
+        "candidates": 84621,
+        "vacancies": 9260
+      },
+      {
+        "week": "2026-03-23",
+        "candidates": 85119,
+        "vacancies": 9127
+      },
+      {
+        "week": "2026-03-30",
+        "candidates": 86013,
+        "vacancies": 8762
+      },
+      {
+        "week": "2026-04-06",
+        "candidates": 86339,
+        "vacancies": 8610
+      },
+      {
+        "week": "2026-04-13",
+        "candidates": 86366,
+        "vacancies": 8221
+      },
+      {
+        "week": "2026-04-20",
+        "candidates": 86790,
+        "vacancies": 7825
+      },
+      {
+        "week": "2026-04-27",
+        "candidates": 86898,
+        "vacancies": 7785
+      },
+      {
+        "week": "2026-05-04",
+        "candidates": 87141,
+        "vacancies": 7834
+      },
+      {
+        "week": "2026-05-11",
+        "candidates": 87614,
+        "vacancies": 8118
+      },
+      {
+        "week": "2026-05-18",
+        "candidates": 87658,
+        "vacancies": 8149
+      },
+      {
+        "week": "2026-05-25",
+        "candidates": 88061,
+        "vacancies": 8173
+      },
+      {
+        "week": "2026-06-01",
+        "candidates": 88405,
+        "vacancies": 7946
+      },
+      {
+        "week": "2026-06-08",
+        "candidates": 88971,
+        "vacancies": 7901
+      },
+      {
+        "week": "2026-06-15",
+        "candidates": 88786,
+        "vacancies": 7755
+      },
+      {
+        "week": "2026-06-22",
+        "candidates": 89092,
+        "vacancies": 7572
+      },
+      {
+        "week": "2026-06-29",
+        "candidates": 89343,
+        "vacancies": 7248
+      },
+      {
+        "week": "2026-07-06",
+        "candidates": 89844,
+        "vacancies": 7155
+      },
+      {
+        "week": "2026-07-13",
+        "candidates": 89944,
+        "vacancies": 7093
+      },
+      {
+        "week": "2026-07-20",
+        "candidates": 90361,
+        "vacancies": 6980
+      },
+      {
+        "week": "2026-07-27",
+        "candidates": 90448,
+        "vacancies": 7249
+      }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "datum.candidates / datum.vacancies",
+      "as": "ratio"
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "layer": [
+    {
+      "description": "Wide pale bars: monthly mean candidates (hidden count scale)",
+      "mark": {
+        "type": "bar",
+        "width": {
+          "band": 0.72
+        },
+        "opacity": 0.15
+      },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "timeUnit": "yearmonth",
+          "type": "temporal",
+          "bandPosition": 0.5,
+          "title": null,
+          "axis": {
+            "grid": false,
+            "format": "%Y",
+            "tickCount": "year",
+            "labelFontSize": 11
+          }
+        },
+        "y": {
+          "aggregate": "mean",
+          "field": "candidates",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              265000
+            ]
+          },
+          "axis": null
+        },
+        "color": {
+          "datum": "Candidates",
+          "scale": {
+            "domain": [
+              "Candidates",
+              "Vacancies"
+            ],
+            "range": [
+              "#2a78d6",
+              "#eb6834"
+            ]
+          },
+          "legend": {
+            "orient": "top",
+            "title": null,
+            "symbolType": "square",
+            "symbolSize": 140,
+            "symbolOpacity": 0.35,
+            "labelExpr": "datum.label + ' (count)'"
+          }
+        }
+      }
+    },
+    {
+      "description": "Narrow bars in front: monthly mean vacancies (same hidden count scale)",
+      "mark": {
+        "type": "bar",
+        "width": {
+          "band": 0.32
+        },
+        "opacity": 0.32
+      },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "timeUnit": "yearmonth",
+          "type": "temporal",
+          "bandPosition": 0.5,
+          "title": null,
+          "axis": {
+            "grid": false,
+            "format": "%Y",
+            "tickCount": "year",
+            "labelFontSize": 11
+          }
+        },
+        "y": {
+          "aggregate": "mean",
+          "field": "vacancies",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              265000
+            ]
+          },
+          "axis": null
+        },
+        "color": {
+          "datum": "Vacancies",
+          "scale": {
+            "domain": [
+              "Candidates",
+              "Vacancies"
+            ],
+            "range": [
+              "#2a78d6",
+              "#eb6834"
+            ]
+          },
+          "legend": {
+            "orient": "top",
+            "title": null,
+            "symbolType": "square",
+            "symbolSize": 140,
+            "symbolOpacity": 0.35,
+            "labelExpr": "datum.label + ' (count)'"
+          }
+        }
+      }
+    },
+    {
+      "description": "Count end label: last weekly candidates",
+      "transform": [
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "as": "rn"
+            }
+          ],
+          "sort": [
+            {
+              "field": "week",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.rn == 1"
+        },
+        {
+          "calculate": "format(datum.candidates / 1000, '.0f') + 'k'",
+          "as": "lbl"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 7,
+        "fontSize": 10.5,
+        "fill": "#898781"
+      },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "candidates",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              265000
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "lbl"
+        }
+      }
+    },
+    {
+      "description": "Count end label: last weekly vacancies",
+      "transform": [
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "as": "rn"
+            }
+          ],
+          "sort": [
+            {
+              "field": "week",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.rn == 1"
+        },
+        {
+          "calculate": "format(datum.vacancies / 1000, '.1f') + 'k'",
+          "as": "lbl"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 7,
+        "fontSize": 10.5,
+        "fill": "#898781"
+      },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "vacancies",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              265000
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "lbl"
+        }
+      }
+    },
+    {
+      "description": "Parity line: 1 candidate per vacancy",
+      "data": {
+        "values": [
+          {
+            "y": 1
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#c3c2b7",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              16
+            ]
+          },
+          "axis": null
+        }
+      }
+    },
+    {
+      "description": "Parity label (halo)",
+      "data": {
+        "values": [
+          {
+            "week": "2020-04-06",
+            "y": 0.55,
+            "t": "1:1 parity"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 10.5,
+        "fill": "#fcfcfb",
+        "stroke": "#fcfcfb",
+        "strokeWidth": 3.5
+      },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              16
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "description": "Parity label",
+      "data": {
+        "values": [
+          {
+            "week": "2020-04-06",
+            "y": 0.55,
+            "t": "1:1 parity"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 10.5,
+        "fill": "#898781"
+      },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              16
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "description": "Full-scale invasion rule",
+      "data": {
+        "values": [
+          {
+            "week": "2022-02-24"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#c3c2b7",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "temporal"
+        }
+      }
+    },
+    {
+      "description": "Full-scale invasion label",
+      "data": {
+        "values": [
+          {
+            "week": "2022-02-24",
+            "t": "Full-scale invasion"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "y": 14,
+        "fontSize": 11,
+        "fill": "#52514e"
+      },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "temporal"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "description": "2021 inversion annotation (halo)",
+      "data": {
+        "values": [
+          {
+            "week": "2021-06-01",
+            "y": 2.45,
+            "t": "Jan–Sep 2021: vacancies > candidates"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "fontSize": 10.5,
+        "fill": "#fcfcfb",
+        "stroke": "#fcfcfb",
+        "strokeWidth": 3.5
+      },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              16
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "description": "2021 inversion annotation",
+      "data": {
+        "values": [
+          {
+            "week": "2021-06-01",
+            "y": 2.45,
+            "t": "Jan–Sep 2021: vacancies > candidates"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "fontSize": 10.5,
+        "fill": "#898781"
+      },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              16
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "description": "The hero: weekly candidates-per-vacancy ratio",
+      "mark": {
+        "type": "line",
+        "stroke": "#0b0b0b"
+      },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "temporal",
+          "title": null,
+          "axis": {
+            "grid": false,
+            "format": "%Y",
+            "tickCount": "year",
+            "labelFontSize": 11
+          }
+        },
+        "y": {
+          "field": "ratio",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              16
+            ]
+          },
+          "axis": {
+            "tickCount": 5,
+            "title": "Candidates per vacancy"
+          }
+        }
+      }
+    },
+    {
+      "description": "Ratio end label (derived from last row)",
+      "transform": [
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "as": "rn"
+            }
+          ],
+          "sort": [
+            {
+              "field": "week",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.rn == 1"
+        },
+        {
+          "calculate": "format(datum.ratio, '.1f')",
+          "as": "lbl"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 7,
+        "fontSize": 12,
+        "fontWeight": 600,
+        "fill": "#0b0b0b"
+      },
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "ratio",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              16
+            ]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "lbl"
+        }
+      }
+    },
+    {
+      "description": "Crosshair + tooltip on nearest week",
+      "mark": {
+        "type": "rule",
+        "stroke": "#c3c2b7",
+        "strokeWidth": 1
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "week"
+            ],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "week",
+          "type": "temporal"
+        },
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 0.6
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "week",
+            "type": "temporal",
+            "title": "Week",
+            "format": "%b %d, %Y"
+          },
+          {
+            "field": "candidates",
+            "type": "quantitative",
+            "title": "Candidates",
+            "format": ","
+          },
+          {
+            "field": "vacancies",
+            "type": "quantitative",
+            "title": "Vacancies",
+            "format": ","
+          },
+          {
+            "field": "ratio",
+            "type": "quantitative",
+            "title": "Per vacancy",
+            "format": ".2f"
+          }
+        ]
+      }
+    }
+  ]
+}

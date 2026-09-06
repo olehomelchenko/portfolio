@@ -1,0 +1,307 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Приклад роботи в шаблоні портфоліо: величина закодована яскравістю, не веселкою.",
+  "title": {
+    "text": "Продажі за кварталами",
+    "subtitle": "Sample Superstore, 2014–2017",
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#7a8894"
+  },
+  "width": 620,
+  "height": 150,
+  "data": {
+    "values": [
+      {
+        "cat": "Канцелярія",
+        "quarter": "2014 Q1",
+        "sales": 14529
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2014 Q2",
+        "sales": 31244
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2014 Q3",
+        "sales": 53924
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2014 Q4",
+        "sales": 52080
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2015 Q1",
+        "sales": 23059
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2015 Q2",
+        "sales": 32320
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2015 Q3",
+        "sales": 35761
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2015 Q4",
+        "sales": 46093
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2016 Q1",
+        "sales": 29441
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2016 Q2",
+        "sales": 34584
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2016 Q3",
+        "sales": 45148
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2016 Q4",
+        "sales": 74767
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2017 Q1",
+        "sales": 43232
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2017 Q2",
+        "sales": 45721
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2017 Q3",
+        "sales": 72197
+      },
+      {
+        "cat": "Канцелярія",
+        "quarter": "2017 Q4",
+        "sales": 84946
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2014 Q1",
+        "sales": 22656
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2014 Q2",
+        "sales": 28064
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2014 Q3",
+        "sales": 41958
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2014 Q4",
+        "sales": 64515
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2015 Q1",
+        "sales": 27374
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2015 Q2",
+        "sales": 27565
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2015 Q3",
+        "sales": 49586
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2015 Q4",
+        "sales": 65993
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2016 Q1",
+        "sales": 24349
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2016 Q2",
+        "sales": 41402
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2016 Q3",
+        "sales": 52815
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2016 Q4",
+        "sales": 80335
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2017 Q1",
+        "sales": 23724
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2017 Q2",
+        "sales": 45032
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2017 Q3",
+        "sales": 56283
+      },
+      {
+        "cat": "Меблі",
+        "quarter": "2017 Q4",
+        "sales": 90348
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2014 Q1",
+        "sales": 37263
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2014 Q2",
+        "sales": 27231
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2014 Q3",
+        "sales": 47751
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2014 Q4",
+        "sales": 63033
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2015 Q1",
+        "sales": 18418
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2015 Q2",
+        "sales": 29239
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2015 Q3",
+        "sales": 44913
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2015 Q4",
+        "sales": 70211
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2016 Q1",
+        "sales": 39447
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2016 Q2",
+        "sales": 60095
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2016 Q3",
+        "sales": 45825
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2016 Q4",
+        "sales": 80997
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2017 Q1",
+        "sales": 56189
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2017 Q2",
+        "sales": 43011
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2017 Q3",
+        "sales": 67772
+      },
+      {
+        "cat": "Техніка",
+        "quarter": "2017 Q4",
+        "sales": 104759
+      }
+    ]
+  },
+  "mark": {
+    "type": "rect",
+    "stroke": "#ffffff",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "quarter",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labelAngle": -45,
+        "labelFontSize": 10
+      }
+    },
+    "y": {
+      "field": "cat",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Меблі",
+        "Канцелярія",
+        "Техніка"
+      ]
+    },
+    "color": {
+      "field": "sales",
+      "type": "quantitative",
+      "title": "продажі, $",
+      "scale": {
+        "scheme": "viridis"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "cat",
+        "title": "категорія"
+      },
+      {
+        "field": "quarter",
+        "title": "квартал"
+      },
+      {
+        "field": "sales",
+        "title": "продажі, $",
+        "format": ","
+      }
+    ]
+  }
+}

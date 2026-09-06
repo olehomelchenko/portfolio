@@ -1,5 +1,4 @@
 ---
-heading: "Ім'я Прізвище"
 show_tagline: true
 charts: true
 ---
